@@ -4,9 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Senac Eventos </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- cdn do font-awesome -->
     <link rel="stylesheet" href="./css/stlye.css">
 </head>
 
@@ -14,66 +18,91 @@
     <!-- topo -->
     <header>
         <figure>
-            <img src="" alt="">
-        </figure>       
+            <img src="./img/logotipo-senac.svg" alt="Logo do Senac" class="img_logo">
+        </figure>
         <nav>
             <ul class="menu">
-                <li class="item_menu"></li>
-                <li class="item_menu"></li>
-                <li class="item_menu"></li>
-                <li class="item_menu"></li>
-                <li class="item_menu"></li>
-                <li class="item_menu"></li>
+                <li class="item_menu">Eventos</li>
+                <li class="item_menu">Por Áreas</li>
+                <li class="item_menu">Por nível de ensino</li>
+                <li class="item_menu">Programação Mensal</li>
+                <li class="item_menu">Eventos anteriores</li>
+                <!-- icone da bibliote front-awesome -->
+                <li class="item_menu"><i class="fa-solid fa-magnifying-glass me-02"></i>Pesquisar eventos</li>
+                <!-- (me) m = margin / e = end --/ 3 = tamanho da imagem>
+                !-- tag i  e Icone -->
             </ul>
         </nav>
 
     </header>
 
+    <section class="info_nav">
+        <!-- ul.info_nav_pag>li*3 -->
+        <ul class="info_nav_pag">
+            <li>Home</li>
+            <li>»</li>
+            <li>Agenda de eventos</li>
+        </ul>
+
+    </section>
 
 
-        <!-- Conteudo -->
-        <main>
-            <div class="d-flex flex-column justify-content-center align-items-center gap-5">
-            <div>
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+    <!-- Conteudo -->
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/Conversas-Profissionais-1920x700.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block texts">
+                        <h2>Conversa com Profissionais | Senac Santana</h2>
+                        <p>O evento é um encontro que aproxima profissionais que são referência no mercado e nossos estudantes, ex-estudantes e futuros estudantes. Mais do que uma palestra, é um bate-papo leve, mediado e organizado por blocos de conversa. Nele, os convidados compartilham suas trajetórias, desafios, aprendizados sobre [...]
+                        </p>
+                        <a href="">Saiba Mais</a>
+                    </div>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/img/Conversas-Profissionais-1920x700.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/cover-evento-casa-aberta-senac-2024.webp" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/FISE_Capa_Site_1920x700-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-item">
+                    <img src="./img/FISE_Capa_Site_1920x700-1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block texts">
+                        <h2>7º Fórum Internacional Senac de Educadores</h2>
+                        <p>Vamos expandir e fortalecer o debate sobre a educação no país e no mundo, trazendo para o centro das discussões temas atuais e relevantes para avanços na área. Convidamos especialistas em educação para compartilhar suas experiências, provocando assim reflexões e a conexão de ideias. Participe [...]</p>
+                        <a href="">Saiba Mais</a>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            
-            
-        
-        </main>
-        <!-- Rodapé -->
-        <footer>
+                <div class="carousel-item">
+                    <img src="./img/cover-evento-casa-aberta-senac-2024.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block texts">
+                        <h2>Casa Aberta Senac</h2>
+                        <p>O Casa Aberta Senac é uma atividade gratuita para você explorar todo o universo de possibilidades profissionais que o Senac oferece. Abrimos as portas de nossas 63 unidades para um dia repleto de atividades inspiradoras, que vão desde workshops e palestras até atendimentos e oficinas. [...]</p>
+                        <a href="">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </main>
+    <!-- Rodapé -->
+    <footer>
 
 
-        </footer>
+    </footer>
 
 
 
@@ -84,3 +113,5 @@
 </body>
 
 </html>
+
+

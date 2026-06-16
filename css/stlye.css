@@ -132,3 +132,33 @@ header{
     /* tamanho da fonte(texto) */
 }
 
+.texts a{
+    width: 370px;
+    /* largura */
+    height: 65px;
+    /* altura */
+    background-color: #F7941D;
+    /* e a cor de fundo de um elemento */
+    display: flex;
+    /* display flex e uma forma de organizar a página de maneira fácil */
+    align-items: center;
+    /* alinha os itens no inicio do eixo vertical */
+    justify-content: center;
+    /* distribui os itens na horizontal, deixando espaço ao redor de cada item */
+    border-radius: 8px;
+    /* Serve para arredondar as bordas de um elemento */
+    text-decoration: none;
+    /* Serve para adicionar ou remover decorações no texto (Sublinado,linha em cima ou linha no meio) */
+    color: #fff;
+    /* cor do texto de um elemento */
+    font-weight: 700;
+    /* Define a espessura da fonte */
+    text-transform: uppercase;
+    /* Muda a forma como o texto é exibido, deixando tudo em maiúculo=uppercase /  minúsculas=lowercase */
+    transition: 1s;
+    /* e animção suave, quando uma propriedade muda / EX: Mudará a cor azul para vermelho */
+}
+
+.texts a:hover{
+    background-color: #4CBF79;
+}

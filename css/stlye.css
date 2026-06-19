@@ -1,164 +1,244 @@
-|*{
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    /* sem o box ele vai alterar os codigos de padding ou margin */
+    font-family: "Roboto", sans-serif;
 }
 
-         /* PARTE SUPERIOR DA PÁGINA */
-header{
-    width: 1200px; 
-    /* largura */
-    margin: 0 auto ;
-    /* espaço externo, a distância entre ele e outro elemento da página */
-    padding: 10px 0;
-    /* padding a distancia entre os conteúdos */
-    display: flex;
-    /* display flex e uma forma de organizar a página de maneira fácil*/
-    justify-content: center;
-    /* gap: 3rem; */
-    /* serve para criar um espaço entre os elementos dentro de um display flex */
-}
-
-.img_logo{
-    width: 117px;
-    /* largura */
-}
-
-.menu{
-    list-style: none;
-    /* nenhum estilo na lista (ul ou ol) */
-    display: flex;
-    /* display flex e uma forma de organizar a página de maneira fácil*/
-    gap: 2.5rem;
-    /* serve para criar um espaço entre os elementos dentro de um display flex */
-    align-items: center;
-    /* alinha os itens na direção vertical */
-    height: 100%;
-    /* altura */
-}
-
-.item_menu{
-    color: #004A8D;
-    /* cor do texto de um elemento */
-    /* font: normal 600 15px "Montserrat"; */
-/* NORMAL = Estilo da fonte  /    600 = Espessura da Fonte   /   15px  Tamanho da fonte  / Montserrat família da fonte */
-    font-size: 15px;
-    /* Tamanho da fonte */
-    font-weight: 600;
-    /* Espessura da Fonte */
-    transition: 0.6s;
-    /* e animção suave, quando uma propriedade muda / EX: Mudará a cor azul para vermelho */
-
-
-    display: flex;
-    /* display flex e uma forma de organizar a página de maneira fácil */
-    gap: 8px;
-    /* serve para criar um espaço entre os elementos dentro de um display flex */
-    align-items: center;
-    /* alinha os itens na direção vertical */
-
-    /*  para deixar mais fácil utiliza o me-03 na (i class="fa-solid fa-magnifying-glass me-02") */
-}
-
-.item_menu:hover{
-    color: #F7941D;
-    /* cor do texto de um elemento */
-    cursor: pointer;
-    /* o cursor do mouse vira uma mãozinha, indicando que o elemento pode ser clicado  */
-}
-
-.info_nav{
-    background-color: #004A8D;
-    /* e a cor de fundo de um elemento */
-    width: 100%;
-    /* largura */
-    padding: 10px 0;
-    /* padding a distancia entre os conteúdos */
-}
-
-.info_nav_pag{
-    list-style: none;
-    /* nenhum estilo na lista (ul ou ol) */
-    color: #fff;
-    /* cor do texto de um elemento */
-    display: flex;
-    /* display flex e uma forma de organizar a página de maneira fácil */
-    gap: 0.7rem;
-    /* serve para criar um espaço entre os elementos dentro de um display flex */
+header {
+    width: 1200px;
     margin: 0 auto;
-    /* espaço externo, a distância entre ele e outro elemento da página */
-    width: 1000px;
-    /* largura */
-    padding: 0 !important;
-    /* padding a distancia entre os conteúdos */
-}
-
-.texts{
-    width: 70%;
-    /* largura */
-    height: 450px;
-    /* altura */
-    background-color: rgba(0,0,0,0.8);
-    /* e a cor de fundo de um elemento */
-    padding: 3rem  2rem;
-    /* padding a distancia entre os conteúdos */
-    display: flex !important;
-     /* display flex e uma forma de organizar a página de maneira fácil   /    !important = dá prioridade máxima a essa regra */
-    flex-direction: column;
-    /* Faz os itens ficar um embaixo do outro */
-    align-items: flex-start;
-    /* alinha os itens no inicio do eixo vertical */
-    justify-content: space-around;
-    /* distribui os itens na horizontal, deixando espaço ao redor de cada item */
-}
-
-.texts h2{
-    font-size: 2.5rem;
-    /* tamanho da fonte(texto) */
-    width: 60%;
-    /* largura */
-    text-align: left;
-    /* Alinhado dos dois lados (esquerda e direita) como em jornais e livros */
-}
-
-
-.texts p{
-    text-align: justify;
-    /* Alinhado dos dois lados (esquerda e direita) como em jornais e livros */
-    width: 100%;
-    /* largura */
-    font-size: 1.2rem;
-    /* tamanho da fonte(texto) */
-}
-
-.texts a{
-    width: 370px;
-    /* largura */
-    height: 65px;
-    /* altura */
-    background-color: #F7941D;
-    /* e a cor de fundo de um elemento */
+    padding: 10px 0;
     display: flex;
-    /* display flex e uma forma de organizar a página de maneira fácil */
-    align-items: center;
-    /* alinha os itens no inicio do eixo vertical */
-    justify-content: center;
-    /* distribui os itens na horizontal, deixando espaço ao redor de cada item */
-    border-radius: 8px;
-    /* Serve para arredondar as bordas de um elemento */
-    text-decoration: none;
-    /* Serve para adicionar ou remover decorações no texto (Sublinado,linha em cima ou linha no meio) */
-    color: #fff;
-    /* cor do texto de um elemento */
-    font-weight: 700;
-    /* Define a espessura da fonte */
-    text-transform: uppercase;
-    /* Muda a forma como o texto é exibido, deixando tudo em maiúculo=uppercase /  minúsculas=lowercase */
-    transition: 1s;
-    /* e animção suave, quando uma propriedade muda / EX: Mudará a cor azul para vermelho */
+    justify-content: space-between;
 }
 
-.texts a:hover{
-    background-color: #4CBF79;
+.img_logo {
+    width: 117px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    height: 100%;
+}
+
+.item_menu {
+    color: #004A8D;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.6s;
+    /* display: flex;
+    gap: 8px; outra opção para separar o icone(pesquisar) da escrita
+    align-items: center; */
+}
+
+.item_menu:hover {
+    color: #F7941D;
+    cursor: pointer;
+}
+
+/* Informações da navegação */
+
+.info_nav {
+    background-color: #004A8D;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.info_nav_pag {
+    list-style: none;
+    color: #fff;
+    display: flex;
+    gap: 0.7rem;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 !important;
+}
+
+.texts {
+    width: 70%;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 3rem 2rem;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.texts h2 {
+    font-size: 2.3rem;
+    width: 60%;
+    text-align: left;
+}
+
+.texts p {
+    text-align: justify;
+    width: 80%;
+    font-size: 1.2rem;
+}
+
+.texts a {
+    width: 370px;
+    height: 65px;
+    background-color: #F7941D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.texts a:hover {
+    background-color: #4CBF69;
+}
+
+main {
+    background-color: #E4E8F0;
+}
+
+footer{
+    width: 100%;
+    background-color: #004A8D;
+    padding: 3rem 0;
+    color: #fff;
+}
+
+.conteudo_footer{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.listas_nav_footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.lista_footer{
+    list-style: none;
+    width: 250px;
+}
+
+/* .lista_footer::first-line{
+    font-size: 1.2rem;
+    color: #817e7e;
+    margin-bottom: 0.8rem;
+} */
+
+.item_titulo{
+    font-size: 1.2rem;
+    color: #817e7e;
+    margin-bottom: 0.8rem;
+}
+
+
+.item_lista{
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+/* .lista_footer li{
+    margin-bottom: 5px;
+    transition: 0.5s;
+} */
+
+.item_lista:hover{
+    font-weight: 800;
+    opacity: 0.8;
+    cursor: pointer;
+    color: #F7941D;
+}
+
+.listas_icones_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+
+.nav_icones{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.info_senac_footer{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.copy{
+    background-color: #00427e;
+    width: 100%;
+    padding: 3rem 0 ;
+}
+
+.copy h3{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+
+
+
+
+@media (max-width: 576px) {
+    .texts {
+        display: none !important;
+    }
+
+    .nav li {
+        width: 100%;
+    }
+
+    .nav input {
+        width: 100%;
+    }
+
+    .conteiner_cards {
+        width: 85%;
+        padding: 0;
+    }
+
+    .card_eventos {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    figure {
+        display: flex;
+        justify-content: center;
+    }
+
 }

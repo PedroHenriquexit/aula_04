@@ -228,6 +228,7 @@ footer{
         width: 100%;
         display: flex;
         flex-direction: column;
+        
     }
 
     .menu {
@@ -239,6 +240,34 @@ footer{
     figure {
         display: flex;
         justify-content: center;
+    }
+
+    .conteudo_footer{
+        width: 100%;
+    }
+
+    .listas_nav_footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listas_icones_footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .info_senac_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copy h3{
+        width: 100%;
+        text-align: center;
+    }
+
+    .info_nav_pag{
+        width: 100%;
     }
 
 }

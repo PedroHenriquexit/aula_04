@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posiçaõ AULA 9 </title>
+</head>
+<style>
+    body{
+        height: 300vh;
+        padding-left: 250px;
+    }
+
+    .caixa1{
+        width: 250px;
+        height: 100vh;
+        background-color: rgba(56,56,84, 0.933);
+        position: fixed;
+        left: 0;
+        top: 0  ;
+        z-index: 1;
+        /* bottom: 0;     para deixar na parte de baixo */
+    }
+
+    .caixa2{
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: green;
+        position: fixed;
+        bottom: 12px;
+        right:  12px;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .caixa3{
+        width: 400px;
+        height: 400px;
+        border: 2px solid #000;
+        position: relative;
+        top: 100px;
+        left: 250px;
+    }
+    .caixa4{
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+</style>
+
+<body>
+    
+    <div class="caixa1"></div>
+    <div class="caixa2">Zap</div>
+    <div class="caixa3"></div>
+    <div class="caixa4"></div>
+
+
+
+</body>
+
+
+</html>
